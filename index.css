@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page-1 */
+.container-1{
+    width: auto;
+    height: 100vh;
+
+}
+.bgimage-1{
+    height: 100vh;
+    width: auto;
+    background: url('./bg3.jpg') no-repeat center center/cover;
+}
+.navbar{
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #bfc0c0;
+    position: fixed;
+    z-index: 1;
+
+}
+.navbar .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.navbar .logo span{
+    color: white;
+    text-shadow: 4px 10px 8px black;
+}
+
+.navmenu {
+    display: flex;
+    align-items: center;
+}
+.navmenu ul li{
+    display: inline-block;
+    width: 95px;
+    list-style: none;
+}
+.navmenu ul li a{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    transition: font-size 1s ease 0.01s;
+}
+.navmenu ul li a:hover{
+    text-decoration: underline;
+    color: white;
+    text-shadow: 2px 3px 11px black;
+    font-size: 19px;
+
+}
+.heading1{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 39px;
+    color: #423b21;
+    
+}
+.para{
+    color: black;
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+}
+.section-1{
+    display: flex;
+    width: auto;
+    height: 100vh;
+    align-items: center;
+}
+.boxfirstsec{
+    /* border: 2px solid; */
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    margin-left: 50px;
+
+}
+.boxfirstsec h1{
+    text-shadow: 5px 11px 23px black;
+}
+.btn{
+    margin-top: 14px;
+    padding: 7px 18px;
+    background-color: #bfc0c0;
+    color: #423b21;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all 0.3s ease 0.2s;
+}
+.btn:hover{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 7px 7px 21px 0px black;
+
+   
+
+}
+
+
+
+/* Page-2 */
+.container-2{
+    width: auto;
+    height: 100vh;
+    background-color: #cacecf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bfc0c0;
+}
+.section-2{
+    width: 100%;
+    height: 80vh;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+.section-2 .para{
+    font-size: 25px;
+    color: #423b21;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.subcontainer-2{
+    /* border: 2px solid black; */
+    background-color: black;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.box{
+    position: static;
+    width: 20%;
+    height: 60%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* box-sizing: border-box; */
+    background-color: black;
+    opacity: 0.9;
+    transition: all 0.3s ease 0.3s ;
+}
+.box:hover{
+    opacity: 1;
+    background-color: #BCAAA4;
+    /* background-color: #55392f; */
+    cursor: pointer;
+    transform: scale(1.1);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.circle{
+    margin-top: 12px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 2px solid white;
+    /* position: static; */
+}
+.circle:hover{
+    cursor: pointer;
+    /* border: 2px solid black; */
+}
+#circle-1{
+    background: url('./profile-2.jpeg') no-repeat center center/cover;
+}
+#circle-2{
+    background: url('./profile-3.jpeg') no-repeat center center/cover;
+    /* background-position-x: -60px; */
+    
+}
+#circle-3{
+    background: url('./profile-1.jpeg') no-repeat center center/cover;
+    /* background-position-x: -74px; */
+}
+.para2 h1{
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+    font-weight: lighter;
+    margin-top: 15px;
+}
+/* page-3 */
+.container-3{
+    width: auto;
+    height: 100vh;
+    background-color: #f1efe1;
+    display: grid;
+    grid-template-areas: 
+    'contact contact'
+    'aside1 aside2'
+    'footer footer'
+    ;
+    grid-template-rows: 2.5fr 5fr 40px;
+
+}
+.contact{
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.contact .cont{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Baloo Bhai', cursive;
+    margin-top: 47px;
+    color: #423b21 ;
+
+}
+.aside1{
+    grid-area: aside1;
+    /* background-color: blueviolet; */
+}
+.aside1-box{
+    width: 49vw;
+    margin: 36px 0px;
+    padding: 0px 38px;
+   
+}
+
+.aside2-box{
+    width: 49vw;
+    margin: 36px 0px;
+    padding: 0px 38px;
+
+}
+
+#abox1 {
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+#a1box1 h3{
+    font-size: 27px;
+    color: #423b21;
+    font-family: 'Baloo Bhai', cursive;
+}
+#a1box1 p{
+    font-size: 16px;
+    color: black;
+    font-family: 'Baloo Bhai', cursive;
+}
+#a1box2 {
+    font-size: 19px;
+    color: black;
+    font-family: 'Baloo Bhai', cursive;
+}
+#a1box2 .items{
+    margin: 25px 0px;
+}
+#a1box2 .items i{
+    margin: 0px 8px;
+}
+
+.aside2{
+    grid-area: aside2;
+    background-color: #f1efe1;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
+
+.container-3 .para{
+    font-size: 25px;
+    color: #423b21;
+    font-family: 'Baloo Bhai', cursive;
+    line-height: 10px;
+}
+
+#a2box1 h3{
+    font-size: 27px;
+    color: #423b21;
+    font-family: 'Baloo Bhai', cursive;
+}
+#a2box1 [placeholder] {
+    font-size: 16px;
+    color: black;
+    font-family: 'Baloo Bhai', cursive;
+    padding-left: 9px;
+    /* text-align: left; */
+}
+
+#a2box1 .form{
+    display: inline-block;
+    height: 40px;
+    width: 170px;
+    margin-bottom: 12px;
+}
+#a2box1 #subject{
+    display: inline-block;
+    height: 40px;
+    width: 343px;
+    margin-bottom: 12px;
+
+}
+#a2box1 #message{
+    display: inline-block;
+    height: 100px;
+    width: 343px;
+    margin-bottom: 12px;
+}
+#a2box1 #submit{
+color: black;
+background-color: white;
+}
+
+.footer h4{
+    color: white;
+
+}
